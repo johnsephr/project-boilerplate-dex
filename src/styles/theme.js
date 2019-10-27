@@ -1,5 +1,5 @@
 //MUI
-import { amber, deepPurple, red, green, blue } from '@material-ui/core/colors'
+import { amber, deepPurple, red, green, blue, grey } from '@material-ui/core/colors'
 
 // Create custom theme here
 
@@ -33,11 +33,9 @@ export const palette = {
         main: red[500],
         dark: red[700]
     },
-    customClass1: {
-        backGroundColor: green[500],
-    },
-    customClass2: {
-        backGroundColor: red[500],
+    modal: {
+        background: blue[500],
+        text: grey[50]
     }
 }
 

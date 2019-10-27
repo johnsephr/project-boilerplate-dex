@@ -1,27 +1,51 @@
-import React from 'react'
-import ButtonModalStyles from './Styles'
+import React, { useState } from 'react'
 
 // MUI
 import { Modal, Button } from '@material-ui/core'
-import { withStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
+
+// Styles
+const useStyles = makeStyles(theme => ({
+    root: {
+        height: 'auto'
+    },
+    modal: {
+        position: 'absolute',
+        margin: 'auto',
+        height: 200,
+        width: 300,
+        backgroundColor: theme.palette.modal.background,
+        color: theme.palette.modal.text,
+        padding: 10,
+        borderRadius: 5
+    },
+    modalContent: {
+        outline: 0
+    },
+    modalHeader: {
+    },
+    button: {
+        margin: 'auto'
+    }
+  }))
 
 const ButtonModal = props => {
-    const { classes } = props
-    const [open, setOpen] = React.useState(false);
+    const classes = useStyles(props)
+    const [open, setOpen] = useState(false)
 
     const handleOpen = () => {
-        setOpen(true);
-    };
+        setOpen(true)
+    }
 
     const handleClose = () => {
-        setOpen(false);
-    };
+        setOpen(false)
+    }
 
     return (
         <div>
             <Button type="button" onClick={handleOpen}>
                 Open Modal
-        </Button>
+            </Button>
             <Modal
                 className={classes.modal}
                 aria-labelledby="simple-modal-title"
@@ -41,4 +65,4 @@ const ButtonModal = props => {
     )
 }
 
-export default withStyles(ButtonModalStyles)(ButtonModal)
+export default ButtonModal

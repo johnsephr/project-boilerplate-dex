@@ -1,15 +1,19 @@
-import React, { Component } from 'react'
-import themeToggleStyles from './Styles'
+import React from 'react'
 
 // Containers
 import { ThemeContext } from '../../containers/ThemeProvider'
 
 // MUI
 import Button from '@material-ui/core/Button'
-import { withStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
+
+// Styles
+const useStyles = makeStyles(theme => ({
+    root: {}
+}))
 
 const ThemeToggle = props => {
-    const { classes } = props
+    const classes = useStyles(props)
     return (
         <ThemeContext.Consumer>
             {({ toggleDarkMode }) => (
@@ -26,4 +30,4 @@ const ThemeToggle = props => {
     )
 }
 
-export default withStyles(themeToggleStyles)(ThemeToggle)
+export default ThemeToggle

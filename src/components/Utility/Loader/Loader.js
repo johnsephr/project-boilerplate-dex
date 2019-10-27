@@ -1,13 +1,23 @@
 import React, { useState } from 'react'
-import loaderStyles from './Styles'
 
+// Loader
 import ClipLoader from 'react-spinners/ClipLoader'
 
 // MUI
-import { withStyles } from '@material-ui/core/styles'
+import { makeStyles } from '@material-ui/core/styles'
+
+// Styles
+const useStyles = makeStyles(theme => ({
+    root: {},
+    container: {
+        position: 'relative',
+        width: 20,
+        margin: 'auto'
+    }
+}))
 
 const Loader = props => {
-    const { classes } = props
+    const classes = useStyles(props)
     const [loading, setLoading] = useState(true)
     return (
         <div className={classes.container}>
@@ -22,4 +32,4 @@ const Loader = props => {
     )
 }
 
-export default withStyles(loaderStyles)(Loader)
+export default Loader

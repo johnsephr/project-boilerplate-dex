@@ -1,16 +1,27 @@
 import React, { Fragment } from 'react'
-import appStyles from './AppStyles'
+
+// Components
 import Header from './components/Header/Header'
 import ThemeToggle from './components/ThemeToggle/ThemeToggle'
 import Loader from './components/Utility/Loader/Loader'
 import ButtonModal from './components/Utility/Modal/Modal'
 
 //MUI
-import { Grid, Button } from '@material-ui/core'
-import { withStyles } from '@material-ui/core/styles'
+import { Grid } from '@material-ui/core'
+import { makeStyles } from '@material-ui/core/styles'
+
+// Styles
+const useStyles = makeStyles(theme => ({
+  root: {
+    height: 'auto'
+  },
+  grid: {
+    padding: 15
+  }
+}))
 
 const App = props => {
-  const { classes } = props
+  const classes = useStyles(props)
   return (
     <Fragment>
       <Header />
@@ -28,7 +39,7 @@ const App = props => {
         <Grid item xs={12}>
           <Loader />
         </Grid>
-       
+
         <Grid item xs={12}>
           <ButtonModal />
         </Grid>
@@ -38,4 +49,4 @@ const App = props => {
   )
 }
 
-export default withStyles(appStyles)(App)
+export default App
