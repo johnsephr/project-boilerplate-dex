@@ -1,10 +1,10 @@
 import React, { Fragment } from 'react'
 
 // Components
-import Header from './components/Header/Header'
-import ThemeToggle from './components/ThemeToggle/ThemeToggle'
-import Loader from './components/Utility/Loader/Loader'
-import ButtonModal from './components/Utility/Modal/Modal'
+import Header from './components/Loop1Custom/Header/Header'
+import ThemeToggle from './components/Loop1Custom/ThemeToggle/ThemeToggle'
+import Loader from './components/Loop1Custom/Utility/Loader/Loader'
+import ButtonModal from './components/Loop1Custom/Utility/Modal/Modal'
 
 //MUI
 import { Grid } from '@material-ui/core'

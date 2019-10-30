@@ -1,7 +1,7 @@
 import React from 'react'
 
 // Containers
-import { ThemeContext } from '../../containers/ThemeProvider'
+import { ThemeContext } from '../../../containers/ThemeProvider'
 
 // MUI
 import Button from '@material-ui/core/Button'
