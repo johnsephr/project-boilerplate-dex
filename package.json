@@ -1,5 +1,5 @@
 {
-  "name": "loop1-boilerplate",
+  "name": "custom-boilerplate",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -9,6 +9,7 @@
     "@material-ui/system": "^4.5.1",
     "react": "^16.10.2",
     "react-dom": "^16.10.2",
+    "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "react-spinners": "^0.6.1"
   },

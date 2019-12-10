@@ -1,5 +1,5 @@
 //MUI
-import { amber, deepPurple, red, green, blue, grey } from '@material-ui/core/colors'
+import { amber, deepPurple, red, blue, grey } from '@material-ui/core/colors'
 
 // Create custom theme here
 

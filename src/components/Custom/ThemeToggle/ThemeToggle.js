@@ -1,11 +1,11 @@
-import React from 'react'
+import React from '../../../../node_modules/react'
 
 // Containers
 import { ThemeContext } from '../../../containers/ThemeProvider'
 
 // MUI
-import Button from '@material-ui/core/Button'
-import { makeStyles } from '@material-ui/core/styles'
+import Button from '../../../../node_modules/@material-ui/core/Button'
+import { makeStyles } from '../../../../node_modules/@material-ui/core/styles'
 
 // Styles
 const useStyles = makeStyles(theme => ({
