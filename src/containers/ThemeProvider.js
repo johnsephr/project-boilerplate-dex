@@ -10,7 +10,7 @@ export const ThemeContext = createContext({
 })
 
 const ThemeProvider = props => {
-    const [darkMode, setDarkMode] = useState(true)
+    const [darkMode, setDarkMode] = useState(false)
     const [alternateTheme, setAlternateTheme] = useState(false)
 
     // Use this to toggle light/dark theme

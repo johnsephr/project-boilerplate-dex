@@ -45,7 +45,31 @@ export const restOfTheme = {
     breakpoints: {
         keys: ['xs', 'sm', 'md', 'lg', 'xl'],
         up: key => `@media (min-width:${breakpoints[key]}px)`,
-    }
+    },
+    typography: {
+        // fontFamily: [
+        //     'SF-Pro-Text-Regular',
+        //     'SF-Pro-Text-Heavy',
+        //     'SF-Pro-Text-Medium',
+
+        // ].join(','),
+        h1: {
+            fontFamily: 'SF-Pro-Text-Heavy',
+            fontSize: '11rem',
+            lineHeight: 1.103,
+            color: '#333333'
+        },
+        h4: {
+            fontFamily: 'SF-Pro-Text-Regular'
+        },
+    },
+    overrides: {
+        MuiLink: {
+            root: {
+                fontFamily: 'SF-Pro-Text-Regular'
+            },
+        },
+    },
 }
 
 

@@ -1,6 +1,21 @@
+@font-face {
+  font-family: 'SF-Pro-Text-Regular';
+  src: local('SF-Pro-Text'), url(./fonts/SF-Pro-Text/SF-Pro-Text-Regular.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-Medium';
+  src: local('SF-Pro-Text'), url(./fonts/SF-Pro-Text/SF-Pro-Text-Medium.otf) format('truetype');
+}
+
+@font-face {
+  font-family: 'SF-Pro-Text-Heavy';
+  src: local('SF-Pro-Text'), url(./fonts/SF-Pro-Text/SF-Pro-Text-Heavy.otf) format('truetype');
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+  font-family: -apple-system, BlinkMacSystemFont, "SF-Pro-Text", "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;

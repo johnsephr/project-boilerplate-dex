@@ -23,19 +23,7 @@ const App = props => {
   const classes = useStyles(props)
   return (
     <Router>
-      <Header />
-
       <Switch>
-        <Route path="/login">
-          <div>
-            <h1>The Login page!</h1>
-          </div>
-        </Route>
-        <Route path="/about">
-          <div>
-            <h1>The About page!</h1>
-          </div>
-        </Route>
         <Route path="/">
           <HomePage />
         </Route>
