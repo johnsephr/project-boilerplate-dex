@@ -2,7 +2,6 @@ import React, { Fragment } from 'react'
 
 // Components
 import HeaderContainer from '../HeaderContainer/HeaderContainer'
-import ProjectsContainer from '../ProjectsContainer/ProjectsContainer'
 
 // MUI
 import { Typography, Grid } from '@material-ui/core'
@@ -30,7 +29,6 @@ const HomePage = props => {
     return (
         <Fragment>
             <HeaderContainer />
-            <ProjectsContainer />
         </Fragment>
     )
 }

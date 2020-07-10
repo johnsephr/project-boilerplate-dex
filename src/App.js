@@ -7,7 +7,6 @@ import {
 
 // Components / Containers
 import HomePage from './containers/HomePage/HomePage'
-import Header from './components/Custom/Header/Header'
 
 //MUI
 import { makeStyles } from '@material-ui/core/styles'

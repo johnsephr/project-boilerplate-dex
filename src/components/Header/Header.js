@@ -50,11 +50,6 @@ const Header = props => {
                             Login
                         </Typography>
                     </Link>
-
-                    {/* 
-                    <Typography variant="h6" className={classes.title}>
-                        Some Text
-                    </Typography> */}
                 </Toolbar>
             </AppBar>
         </Fragment>
